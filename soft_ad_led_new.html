@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+        }
+
+        .led-board {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+        }
+
+        .led-text {
+            font-family: 'Arial', sans-serif;
+            font-size: 48px;
+            color: #0f0;
+            text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scroll 10s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="led-board">
+        <div class="led-text">给原子弹抛光，你是个有钱的大骗子！</div>
+    </div>
+</body>
+
+</html>    
